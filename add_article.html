@@ -13,12 +13,13 @@
 	<form name="add_article" action="#" method="post" enctype="multipart/form-data">
 		<fieldset>
 			<legend>Категория статьи</legend>
-			<select required id="category" name="category"> выпадающий список
-                <option value="russia">Путешествия по России</option>
-					<optgroup label="Путешествия по миру">
-						<option value="europe">Автостопом по Европе</option>
-						<option value="cruise">Паромные круизы</option>
-						<option value="worldwide">Кругосветное путешествие</option>
+			<select required id="category" name="category">
+				<optgroup label="Путешествия по России">
+					<option value="russia">Путешествия по России</option>
+				<optgroup label="Путешествия по миру">
+					<option value="europe">Автостопом по Европе</option>
+					<option value="cruise">Паромные круизы</option>
+					<option value="worldwide">Кругосветное путешествие</option>
 			</select>
 		</fieldset>
 	
@@ -29,7 +30,7 @@
 		
 		<fieldset>
 			<legend>Текст</legend>
-			<textarea required textarea cols="40" rows="10" name="text"></textarea>
+			<textarea required cols="40" rows="10" name="text"></textarea>
 		</fieldset>
 	
 		<fieldset>
