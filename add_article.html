@@ -1,0 +1,59 @@
+  <!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="блог путешественника">
+        <meta name="keywords" content="путешествия, travel, blog, блог">
+        <meta name="author" content="Артём Е.">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png">
+        <title>Блог путешественника - главная</title>
+    </head>
+	
+    <body>
+	<h1>Добавление статьи</h1>
+	
+	<form name="add_article" action="#" method="post" enctype="multipart/form-data">
+		<fieldset>
+			<legend>Категория статьи</legend>
+			<select required id="category" name="category"> выпадающий список
+                <option value="russia">Путешествия по России</option>
+					<optgroup label="Путешествия по миру">
+						<option value="europe">Автостопом по Европе</option>
+						<option value="cruise">Паромные круизы</option>
+						<option value="worldwide">Кругосветное путешествие</option>
+			</select>
+		</fieldset>
+	
+		<fieldset>
+			<legend>Заголовок статьи</legend>
+			<input required type="text" name="title" placeholder="Заголовок" minlength="2" maxlength="100">			
+		</fieldset>
+		
+		<fieldset>
+			<legend>Текст</legend>
+			<textarea required textarea cols="40" rows="10" name="text"></textarea>
+		</fieldset>
+	
+		<fieldset>
+			<legend>Фотографии к статье</legend>
+			<input type="file" multiple accept="image/*">
+		</fieldset>
+	
+		<fieldset>
+			<legend>Опубликовать на сайте?</legend>
+			<label>Опубликовать <input type="radio" name="publish" value="private"></label>
+			<label>Не опубликовывать <input type="radio" name="publish" value="public" checked></label>
+		</fieldset>
+		
+		<fieldset>
+			<legend>ЧПУ-url для статьи</legend> 
+			<input disabled type="text" name="article_url" minlength="1" maxlength="50"> <!--подразумевается активация с помощью JS при выборе опции "Опубликовать" выше-->
+		</fieldset>
+	
+		<br>
+			<div>
+            <input type="submit" value="Добавить статью">
+			</div>
+	</form>
+	</body>
+</html>
