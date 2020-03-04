@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Регистрация</title>
+</head>
+<body>
+	<h1>Регистрация в блоге</h1>
+    <form name="register" action="#" method="post" enctype="multipart/form-data">
+			<fieldset>
+					<legend>Отображаемое имя</legend>
+					<div>
+					<input required type="text" id="name" name="name" placeholder="Имя" minlength="2" maxlength="30">
+					</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Пароль</legend>
+				<div>Пароль должен содержать не менее 7 символов.</div>
+					<input required type="password" name="password" minlength="7" maxlength="40" placeholder="Пароль">
+					<input required type="password" name="passwordconfirm" minlength="7" maxlength="40" placeholder="Подтвердите пароль">
+			</fieldset>
+
+			<fieldset>
+				<legend>Ваша электронная почта</legend>
+				<input required type="email" name="email" size="35" autocomplete="on" placeholder="Адрес электронной почты">
+				<input required type="email" name="emailconfirm" size="35" autocomplete="on" placeholder="Повторите адрес электронной почты">
+			</fieldset>
+			
+			<br>
+
+			<fieldset>
+				<legend>Дополнительная информация для профиля</legend>
+					<div>
+						<div>Ваш день рождения</div>
+						<input type="date" name="birthday" value="1980-01-01" min="1930-01-01" max="2019-12-31">
+					</div>
+					
+					<br>
+					
+					<div>
+						<div>Отображать День рождения в профиле?</div>
+							<label>
+								Да 
+								<input type="radio" name="showbirthday" value="visible">
+							</label>
+							
+							<label>
+								Нет 
+								<input type="radio" name="showbirthday" value="hidden">
+							</label>
+					</div>
+					<br>
+					
+					<div>
+						<div>Загрузите аватар</div>
+						<div>
+							<input type="file" multiple accept="image/*" name="avatar">
+						</div>
+					</div>
+			
+			</fieldset>
+		
+			<br>
+
+			<fieldset>
+			<legend>Проверка</legend>
+				<div>
+					Я не робот: <input required type="checkbox" name="captcha">
+				</div>
+			</fieldset>
+
+			<br>
+		
+		<div>
+            <input type="submit" value="Зарегистрироваться">
+        </div>
+		
+    </form>
+</body>
+</html>
