@@ -1,0 +1,69 @@
+body {
+	margin: 0;
+	background-image: url(../img/background.png);
+	background-attachment: fixed;
+	font-family: Verdana;
+}
+
+header {
+	background: #394551;
+	border: 1px solid #FFFFF1;
+}
+	
+ul {
+	list-style-type: none;
+}
+
+h1 {
+	font-family: 'Lora', serif;
+	font-size: 60pt;
+	color: black;
+	text-align: center;
+}
+
+h2 {
+	color: #2B5175;
+	font-size: 25pt;
+	font-family: 'Lora', serif;
+}
+
+main {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+main ul {
+	list-style-type: square;
+}
+
+header a {
+	color: silver;
+}
+
+.article_title a {
+	color: black;
+}
+
+.read {
+	padding: 5px 20px;
+	background: black;
+	color: white;
+	font-family: Sans-Serif;
+	font-size: 13pt;
+	text-decoration: none;
+}
+
+.main_picture {
+	width: 100%;
+}
+
+footer {
+	background: #394551;
+}	
+

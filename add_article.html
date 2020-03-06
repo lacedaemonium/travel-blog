@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="author" content="Артём Е.">
 		<link rel="shortcut icon" type="image/x-icon" href="favicon-32x32.png">
-        <title>Блог путешественника - главная</title>
+        <title>Добавление статьи</title>
     </head>
 	
     <body>
@@ -16,10 +16,12 @@
 			<select required id="category" name="category">
 				<optgroup label="Путешествия по России">
 					<option value="russia">Путешествия по России</option>
+				</optgroup>
 				<optgroup label="Путешествия по миру">
 					<option value="europe">Автостопом по Европе</option>
 					<option value="cruise">Паромные круизы</option>
 					<option value="worldwide">Кругосветное путешествие</option>
+				</optgroup>
 			</select>
 		</fieldset>
 	
@@ -35,7 +37,7 @@
 	
 		<fieldset>
 			<legend>Фотографии к статье</legend>
-			<input type="file" multiple accept="image/*">
+			<input type="file" name="photos" multiple accept="image/*">
 		</fieldset>
 	
 		<fieldset>
