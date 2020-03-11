@@ -122,12 +122,3 @@ footer {
 	padding: 20px;
 	text-align: justify;
 }
-
-.bottom {
-	display: flex;
-	flex-direction: column;
-	margin: 20px;
-	padding: 10px;
-	background: white;
-	border: solid 1px black;
-}
