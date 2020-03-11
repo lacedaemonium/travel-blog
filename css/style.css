@@ -6,8 +6,12 @@ body {
 }
 
 header {
-	background: #394551;
+	background: linear-gradient(to bottom, #637180, #323e4a);
 	border: 1px solid #FFFFF1;
+}
+
+nav {
+	
 }
 	
 ul {
@@ -67,3 +71,62 @@ footer {
 	background: #394551;
 }	
 
+
+/* flex */
+.menu {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center; 
+}
+
+.flex_main {
+
+	margin-top: 3%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.flex_main div {
+    padding: 15px;
+    margin: 15px;
+    background: lightgrey;
+	text-align: justify;
+ }
+ 
+.flex_main_middle {
+
+  display: flex-inline;
+  flex-direction: column;
+}
+
+.flex_main_middle div {
+	height: 120px;
+	margin: 20px;
+	background: white;
+	color: black;
+}
+
+.picture_main {
+	float: right;
+	padding-left: 15px;
+}
+
+.left {
+	float: left;
+	padding-right: 15px;
+}
+
+.content {
+	padding: 20px;
+	text-align: justify;
+}
+
+.bottom {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	padding: 10px;
+	background: white;
+	border: solid 1px black;
+}
