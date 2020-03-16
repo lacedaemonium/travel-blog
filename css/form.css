@@ -1,0 +1,28 @@
+input[type="submit"] {
+	border: 0;
+	padding: 10px 15px;
+	background: lightblue;
+}
+
+form :focus {
+	outline: none;
+}
+
+textarea:valid,
+input:in-range,
+input[type="text"]:valid {
+	border: 1px solid green;
+}
+
+textarea:invalid,
+input:out-of-range,
+input[type="text"]:invalid {
+	border: 1px solid red;
+}
+
+input :required + span:before {
+	content: "\2718";
+	color: red;
+	margin-left: 10px;
+	font-size: 20px;
+}

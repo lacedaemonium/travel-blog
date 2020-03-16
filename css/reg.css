@@ -1,0 +1,27 @@
+input[type="submit"] {
+	border: 0;
+	padding: 10px 15px;
+	background: lightblue;
+}
+
+form :focus {
+	outline: none;
+}
+
+textarea:valid,
+input:in-range,
+input[type="email"]:valid,
+input[type="checkbox"]:valid,
+input[type="password"]:valid,
+input[type="text"]:valid {
+	border: 1px solid green;
+}
+
+textarea:invalid,
+input:out-of-range,
+input[type="email"]:invalid,
+input[type="checkbox"]:invalid,
+input[type="password"]:invalid,
+input[type="text"]:invalid {
+	border: 1px solid red;
+}

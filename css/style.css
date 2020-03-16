@@ -172,3 +172,26 @@ div p {
 .container_three {
 	margin-top: 20px;
 }
+
+/* auth */
+.modal {
+	position: absolute;
+	left: 45%;
+	background: grey;
+	padding: 15px;
+	border-radius: 10px;
+}
+
+.modal:target {
+	top: 50%;
+}
+
+.modal:not(:target) {
+	top: -50%;
+}
+
+.close-modal {
+	position: absolute;
+	top: 3px;
+	right: 5px;
+}
