@@ -1,0 +1,25 @@
+h1 {
+	color: red;
+}
+
+.name:valid {
+	background-color: green;
+	border: solid 1px green;
+}
+
+.name:invalid {
+	background-color: red;
+	border: solid 1px green;
+}
+
+.password:in-range {
+	border: solid 1px green;
+}
+
+.password:out-of-range {
+border: solid 1px red;
+}
+
+.password {
+	border: solid 1px black;
+}
